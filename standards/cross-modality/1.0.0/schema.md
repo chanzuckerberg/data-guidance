@@ -97,7 +97,7 @@ The following descriptive metadata MUST be associated with all "registered - sha
         <table>
           <thead>
             <tr>
-              <th>For the corresponding <code>organism_ontology_term_id</code></th>
+              <th>For the corresponding<br><code>organism_ontology_term_id</code></th>
               <th>Value</th>
             </tr>
           </thead>
@@ -283,7 +283,7 @@ The following descriptive metadata MUST be associated with all "registered - sha
         <table>
           <thead>
             <tr>
-              <th>For the corresponding <code>organism_ontology_term_id</code></th>
+              <th>For the corresponding<br><code>organism_ontology_term_id</code></th>
               <th>Value</th>
             </tr>
           </thead>
@@ -327,7 +327,7 @@ The following descriptive metadata MUST be associated with all "registered - sha
          </li></ul><br>
           <table>
         <thead><tr>
-          <th>For the corresponding <code>organism_ontology_term_id</code></th>
+          <th>For the corresponding<br><code>organism_ontology_term_id</code></th>
           <th>Value</th>
         </tr></thead>
         <tbody>
