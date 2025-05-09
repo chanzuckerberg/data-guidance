@@ -106,8 +106,8 @@ The following descriptive metadata MUST be associated with all "registered - sha
               <td>
                 <a href="https://www.ebi.ac.uk/ols4/ontologies/ncbitaxon/classes?obo_id=NCBITaxon%3A6239"><code>"NCBITaxon:6239"</code></a><br>for <i>Caenorhabditis elegans</i>
               </td>
-              <td>
-                The List element MUST be <a href="https://www.ebi.ac.uk/ols4/ontologies/wbls/classes?obo_id=WBls%3A0000669"><code>WBls:0000669</code></a> for <i>unfertilized egg Ce</i>,<br>the most accurate descendant of <a href="https://www.ebi.ac.uk/ols4/ontologies/wbls/classes?obo_id=WBls%3A0000803"><code>WBls:0000803</code></a><br>for <i>C. elegans life stage occurring during embryogenesis</i>, or<br>the most accurate descendant of <a href="https://www.ebi.ac.uk/ols4/ontologies/wbls/classes?obo_id=WBls%3A0000804"><code>WBls:0000804</code></a><br>for <i>C. elegans life stage occurring post embryogenesis</i> 
+              <td style="word-break:break-all;">
+                The List element MUST be <a href="https://www.ebi.ac.uk/ols4/ontologies/wbls/classes?obo_id=WBls%3A0000669"><code>WBls:0000669</code></a> for <i>unfertilized egg Ce</i>, the most accurate descendant of <a href="https://www.ebi.ac.uk/ols4/ontologies/wbls/classes?obo_id=WBls%3A0000803"><code>WBls:0000803</code></a> for <i>C. elegans life stage occurring during embryogenesis</i>, or the most accurate descendant of <a href="https://www.ebi.ac.uk/ols4/ontologies/wbls/classes?obo_id=WBls%3A0000804"><code>WBls:0000804</code></a> for <i>C. elegans life stage occurring post embryogenesis</i> 
               </td>
             </tr>
             <tr>
