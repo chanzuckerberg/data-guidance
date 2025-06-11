@@ -42,7 +42,6 @@ The following ontologies are referenced in this schema. If ontologies are missin
 | [Drosophila Anatomy Ontology] | FBbt |
 | [Drosophila Development Ontology] | FBdv |
 | [Experimental Factor Ontology] | EFO |
-| [Human Ancestry Ontology] | HANCESTRO |
 | [Human Developmental Stages] |  HsapDv |
 | [Mondo Disease Ontology] | MONDO |
 | [Mouse Developmental Stages]| MmusDv |
