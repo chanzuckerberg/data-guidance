@@ -26,12 +26,59 @@ The cross modality schema version is based on [Semantic Versioning](https://semv
 All changes are documented in the schema [Changelog](#appendix-a-changelog).
 
 
-## Background
+## Descriptive Metadata
 
 The following descriptive metadata MUST be associated with all "registered - sharing" datasets to ensure that <u><b>datasets can be found by searching for common experimental and biological characteristics of datasets</b></u>. This list is intentionally limited to metadata that SHOULD be annotated at the time data are generated. These metadata MUST be programmatically validated to ensure compliance. Additional metadata MAY be annotated at the discretion of data stewards.
 
-**Editorial Note**: The expectation is that specific ontology releases MUST be *pinned* in versions of the cross-modality schema similar to [CELLxGENE Discover](https://github.com/chanzuckerberg/single-cell-curation/blob/main/schema/5.3.0/schema.md#required-ontologies). If current ontologies are missing required terms, then ontologists are responsive to New Term Requests [NTR] such as [[NTR] Version specific Visium assays](https://github.com/EBISPOT/efo/issues/2178) which was created for CELLxGENE Discover requirements.
+## Required Ontologies
 
+The following ontologies are referenced in this schema. If ontologies are missing required terms, then ontologists are responsive to New Term Requests [NTR] such as [[NTR] Version specific Visium assays](https://github.com/EBISPOT/efo/issues/2178) which was created for CELLxGENE Discover requirements.
+
+| Ontology | OBO Prefix |
+|:--|:--|
+| [C. elegans Development Ontology] | WBls |
+| [C. elegans Gross Anatomy Ontology] | WBbt |
+| [Cell Ontology] | CL |
+| [Drosophila Anatomy Ontology] | FBbt |
+| [Drosophila Development Ontology] | FBdv |
+| [Experimental Factor Ontology] | EFO |
+| [Human Ancestry Ontology] | HANCESTRO |
+| [Human Developmental Stages] |  HsapDv |
+| [Mondo Disease Ontology] | MONDO |
+| [Mouse Developmental Stages]| MmusDv |
+| [NCBI organismal classification] |  NCBITaxon |
+| [Phenotype And Trait Ontology] | PATO |
+| [Uberon multi-species anatomy ontology] |  UBERON |
+| [Zebrafish Anatomy Ontology] | ZFA<br>ZFS |
+| | |
+
+[C. elegans Development Ontology]: https://obofoundry.org/ontology/wbls.html
+
+[C. elegans Gross Anatomy Ontology]: https://obofoundry.org/ontology/wbbt.html
+
+[Cell Ontology]: http://obofoundry.org/ontology/cl.html
+
+[Drosophila Anatomy Ontology]: https://obofoundry.org/ontology/fbbt.html
+
+[Drosophila Development Ontology]: https://obofoundry.org/ontology/fbdv.html
+
+[Experimental Factor Ontology]: http://www.ebi.ac.uk/efo
+
+[Human Ancestry Ontology]: http://www.obofoundry.org/ontology/hancestro.html
+
+[Human Developmental Stages]: http://obofoundry.org/ontology/hsapdv.html
+
+[Mondo Disease Ontology]: http://obofoundry.org/ontology/mondo.html
+
+[Mouse Developmental Stages]: http://obofoundry.org/ontology/mmusdv.html
+
+[NCBI organismal classification]: http://obofoundry.org/ontology/ncbitaxon.html
+
+[Phenotype And Trait Ontology]: http://www.obofoundry.org/ontology/pato.html
+
+[Uberon multi-species anatomy ontology]: http://www.obofoundry.org/ontology/uberon.html
+
+[Zebrafish Anatomy Ontology]: https://obofoundry.org/ontology/zfa.html
 
 ## assay_ontology_term_id
 
