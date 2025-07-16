@@ -148,7 +148,7 @@ With the exception of Cellosaurus, ontology terms for metadata MUST use [OBO-for
     <tr>
       <th>Value</th>
       <td>
-        <code>List[String]</code><br><br>If <code>tissue_type</code> is <code>"cell line"</code>, the List element MUST be <code>"na"</code>.<br><br>
+        <code>List[String]</code><br><br>If corresponding <code>tissue_type</code> is <code>"cell line"</code>, the List element MUST be <code>"na"</code>.<br><br>
         If unavailable, the List element MUST be <code>"unknown"</code>.<br><br>
         <table>
           <thead>
