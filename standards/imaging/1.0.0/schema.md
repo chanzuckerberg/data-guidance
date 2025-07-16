@@ -43,7 +43,7 @@ These are the ontologies used.
 | [Cell Ontology] | CL |
 | [Drosophila Anatomy Ontology] | FBbt |
 | [Drosophila Development Ontology] | FBdv |
-| [Biological Imaging Methods Ontology] | FBBI |
+| [Experimental Factor Ontology] | EFO |
 | [Human Developmental Stages] |  HsapDv |
 | [Mondo Disease Ontology] | MONDO |
 | [Mouse Developmental Stages]| MmusDv |
@@ -64,7 +64,7 @@ These are the ontologies used.
 
 [Drosophila Development Ontology]: https://obofoundry.org/ontology/fbdv.html
 
-[Biological Imaging Methods Ontology]: https://www.ebi.ac.uk/ols4/ontologies/fbbi
+[Experimental Factor Ontology]: https://www.ebi.ac.uk/ols4/ontologies/efo
 
 [Human Ancestry Ontology]: http://www.obofoundry.org/ontology/hancestro.html
 
@@ -90,7 +90,7 @@ This refers specifically to how ontology terms from tables/fields defined in thi
 
 | DCA | CZI Crossmodal | Matching Ontology? |
 | :---- | :---- | :---- |
-| factor value[assay_ontology_term_id] | assay_ontology_term_id | No (FBbi) |
+| factor value[assay_ontology_term_id] | assay_ontology_term_id | Yes (will update microscopy terms) |
 | factor value[assay] | assay | No (FBbi) |
 | factor value[developmental_stage_ontology_term_id] | development_stage_ontology_term_id | Yes (HsapDV, MmusDv, ZFS,  WBLS, FBDV) |
 | factor value[developmental_stage] | development_stage | Yes(HsapDV, MmusDv, ZFS,  WBLS, FBDV) |
@@ -115,7 +115,7 @@ The Dynamic Cell Atlas is comprised of multiple fluorescence microscopy datasets
 
   ### Source_Seg_Path
   - **Key:** `Source_Seg_Path`  
-  - **Description:** This is the path to the original segmentation image, which is usually on an external S3 bucket, Google Drive, or website. Most of the original files are .tif or .zarr (version 2), which can be identified from the file path. This information is recorded for data provenance. During the zarr conversion these arrays are embedded within the zarrv3 store as labels or segmentations.
+  - **Description:** This is the path to the original segmentation image, which is usually on an external S3 bucket, Google Drive, or website. Most of the original files are .tif or .zarr (version 2), which can be identified from the file path. This information is recorded for data provenance. During the zarr conversion these arrays are embedded within the zarrv3 store as labels or segmentations. If the image does not have related segmentations or masks, the column will be left as "Not Applicable".
   - **Value:** List[String]. Each pathway should end in ".zip", ".tif", ".zarr", etc.
 
   ### Internal_S3_Path
