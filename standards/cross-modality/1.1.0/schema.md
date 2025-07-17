@@ -366,7 +366,7 @@ With the exception of Cellosaurus, ontology terms for metadata MUST use [OBO-for
                 <a href="https://www.ebi.ac.uk/ols4/ontologies/ncbitaxon/classes?obo_id=NCBITaxon%3A7955"><code>"NCBITaxon:7955"</code></a><br>for <i>Danio rerio</i>
               </td>
               <td>
-                The List element MUST be either an UBERON term or the most accurate descendant<br>of <a href="https://www.ebi.ac.uk/ols4/ontologies/zfa/classes?obo_id=ZFA%3A0100000"><code>ZFA:0100000</code></a> for <i>zebrafish anatomical entity</i> excluding <a href="https://www.ebi.ac.uk/ols4/ontologies/zfa/classes?obo_id=ZFA%3A0001093"><code>ZFA:0001093</code></a> for <i>unspecified</i> and <a href="https://www.ebi.ac.uk/ols4/ontologies/zfa/classes?obo_id=ZFA%3A0009000"><code>ZFA:0009000</code></a> for <i>cell</i> and its descendants
+                The List element MUST be either an UBERON term or the most accurate descendant<br>of <a href="https://www.ebi.ac.uk/ols4/ontologies/zfa/classes?obo_id=ZFA%3A0100000"><code>ZFA:0100000</code></a> for <i>zebrafish anatomical entity</i> excluding <a href="https://www.ebi.ac.uk/ols4/ontologies/zfa/classes?obo_id=ZFA%3A0001093"><code>ZFA:0001093</code></a> for <br><i>unspecified</i> and <a href="https://www.ebi.ac.uk/ols4/ontologies/zfa/classes?obo_id=ZFA%3A0009000"><code>ZFA:0009000</code></a> for <i>cell</i> and its descendants
               </td>
             </tr>
             <tr>
