@@ -2,7 +2,7 @@
 
 Contact: brianraymor@chanzuckerberg.com
 
-Document Status: _Drafting_
+Document Status: _Approved_
 
 Version: 1.1.0
 
@@ -171,7 +171,7 @@ With the exception of Cellosaurus, ontology terms for metadata MUST use [OBO-for
                 <a href="https://www.ebi.ac.uk/ols4/ontologies/ncbitaxon/classes?obo_id=NCBITaxon%3A7955"><code>"NCBITaxon:7955"</code></a><br>for <i>Danio rerio</i>
               </td>
               <td>
-                The List element MUST be the most accurate descendant of <a href="https://www.ebi.ac.uk/ols4/ontologies/zfs/classes?obo_id=ZFS%3A0100000"><code>ZFS:0100000</code></a> for <i>zebrafish stage</i><br>excluding <a href="https://www.ebi.ac.uk/ols4/ontologies/zfs/classes?obo_id=ZFS%3A0000000"><code>ZFS:0000000</code></a> for <i>Unknown</i>
+                The List element MUST be the most accurate descendant of <a href="https://www.ebi.ac.uk/ols4/ontologies/zfs/classes?obo_id=ZFS%3A0100000"><code>ZFS:0100000</code></a><br>for <i>zebrafish stage</i> excluding <a href="https://www.ebi.ac.uk/ols4/ontologies/zfs/classes?obo_id=ZFS%3A0000000"><code>ZFS:0000000</code></a> for <i>Unknown</i>
               </td>
             </tr>
             <tr>
@@ -187,7 +187,7 @@ With the exception of Cellosaurus, ontology terms for metadata MUST use [OBO-for
                 <a href="https://www.ebi.ac.uk/ols4/ontologies/ncbitaxon/classes?obo_id=NCBITaxon%3A9606"><code>"NCBITaxon:9606"</code></a><br>for <i>Homo sapiens</i>
               </td>
               <td>
-                The List element MUST be the most accurate descendant of <a href="https://www.ebi.ac.uk/ols4/ontologies/hsapdv/classes?obo_id=HsapDv%3A0000001"><code>HsapDv:0000001</code></a> for <i>life cycle</i>
+                The List element MUST be the most accurate descendant of <a href="https://www.ebi.ac.uk/ols4/ontologies/hsapdv/classes?obo_id=HsapDv%3A0000001"><code>HsapDv:0000001</code></a><br>for <i>life cycle</i>
               </td>
             </tr>
             <tr>
@@ -195,7 +195,7 @@ With the exception of Cellosaurus, ontology terms for metadata MUST use [OBO-for
                 <a href="https://www.ebi.ac.uk/ols4/ontologies/ncbitaxon/classes?obo_id=NCBITaxon%3A10090"><code>"NCBITaxon:10090"</code></a><br>for <i>Mus musculus</i> or<br>one of its descendants
               </td>
               <td>
-                The List element MUST be the accurate descendant of <a href="https://www.ebi.ac.uk/ols4/ontologies/mmusdv/classes?obo_id=MmusDv%3A0000001"><code>MmusDv:0000001</code></a> for <i>life cycle</i>
+                The List element MUST be the accurate descendant of <a href="https://www.ebi.ac.uk/ols4/ontologies/mmusdv/classes?obo_id=MmusDv%3A0000001"><code>MmusDv:0000001</code></a><br>for <i>life cycle</i>
               </td>
             </tr>
             <tr>
@@ -203,7 +203,7 @@ With the exception of Cellosaurus, ontology terms for metadata MUST use [OBO-for
               For all other organisms
               </td>
               <td>
-              The List element MUST be the most accurate descendant of <a href="https://www.ebi.ac.uk/ols4/ontologies/uberon/classes?obo_id=UBERON%3A0000105"><code>UBERON:0000105</code></a> for <i>life cycle stage</i>, excluding <a href="https://www.ebi.ac.uk/ols4/ontologies/uberon/classes?obo_id=UBERON%3A0000071"><code>UBERON:0000071</code></a> for <i>death stage</i>.
+              The List element MUST be the most accurate descendant of <a href="https://www.ebi.ac.uk/ols4/ontologies/uberon/classes?obo_id=UBERON%3A0000105"><code>UBERON:0000105</code></a> <br>for <i>life cycle stage</i>, excluding <a href="https://www.ebi.ac.uk/ols4/ontologies/uberon/classes?obo_id=UBERON%3A0000071"><code>UBERON:0000071</code></a> for <i>death stage</i>.
               </td>
             </tr>
           </tbody>
