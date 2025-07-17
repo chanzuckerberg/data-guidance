@@ -344,7 +344,7 @@ With the exception of Cellosaurus, ontology terms for metadata MUST use [OBO-for
       <th>Value</th>
       <td>
         <code>List[String]</code><br><br>If the corresponding <code>tissue_type</code> is <code>"cell line"</code>, the List element MUST be a Cellosaurus term.<br><br>
-        If the corresponding <code>tissue_type</code> is <code>"organelle"</code>, the List element MUST be a descendant of <a href="https://www.ebi.ac.uk/ols4/ontologies/efo/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FGO_0005575"><code>GO:0005575</code></a> for <i>cellular_component</i>.
+        If the corresponding <code>tissue_type</code> is <code>"organelle"</code>, the List element MUST be a descendant of <a href="https://www.ebi.ac.uk/ols4/ontologies/efo/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FGO_0005575"><code>GO:0005575</code></a><br>for <i>cellular_component</i>.
 <br><br>If the corresponding <code>tissue_type</code> is <code>"tissue"</code> or <code>"organoid"</code> then:<br><br>
         <table>
           <thead>
@@ -382,7 +382,7 @@ With the exception of Cellosaurus, ontology terms for metadata MUST use [OBO-for
               For all other organisms
               </td>
               <td>
-              The List element MUST be the most accurate descendant of <a href="https://www.ebi.ac.uk/ols4/ontologies/uberon/classes?obo_id=UBERON%3A0001062"><code>UBERON:0001062</code></a> for <i>anatomical entity</i>
+              The List element MUST be the most accurate descendant of <a href="https://www.ebi.ac.uk/ols4/ontologies/uberon/classes?obo_id=UBERON%3A0001062"><code>UBERON:0001062</code></a> <br>for <i>anatomical entity</i>
               </td>
             </tr>
           </tbody>
@@ -408,7 +408,7 @@ With the exception of Cellosaurus, ontology terms for metadata MUST use [OBO-for
               <a href="https://www.ebi.ac.uk/ols4/ontologies/ncbitaxon/classes?obo_id=NCBITaxon%3A6239"><code>"NCBITaxon:6239"</code></a><br>for <i>Caenorhabditis elegans</i>
             </td>
             <td>
-              The List element MUST be either a CL term or the most accurate descendant of <a href="https://www.ebi.ac.uk/ols4/ontologies/wbbt/classes?obo_id=WBbt%3A0004017"><code>WBbt:0004017</code></a><br>for <i>Cell</i> excluding <a href="https://www.ebi.ac.uk/ols4/ontologies/wbbt/classes?obo_id=WBbt%3A0006803"><code>WBbt:0006803</code></a> for <i>Nucleus</i> and its descendants
+              The List element MUST be either a CL term or the most accurate descendant of <br><a href="https://www.ebi.ac.uk/ols4/ontologies/wbbt/classes?obo_id=WBbt%3A0004017"><code>WBbt:0004017</code></a> for <i>Cell</i> excluding <a href="https://www.ebi.ac.uk/ols4/ontologies/wbbt/classes?obo_id=WBbt%3A0006803"><code>WBbt:0006803</code></a> for <i>Nucleus</i> and its descendants
             </td>
           </tr>
           <tr>
@@ -416,7 +416,7 @@ With the exception of Cellosaurus, ontology terms for metadata MUST use [OBO-for
               <a href="https://www.ebi.ac.uk/ols4/ontologies/ncbitaxon/classes?obo_id=NCBITaxon%3A7955"><code>"NCBITaxon:7955"</code></a><br>for <i>Danio rerio</i>
             </td>
             <td>
-              The List element MUST be either a CL term or the most accurate descendant of <a href="https://www.ebi.ac.uk/ols4/ontologies/zfa/classes?obo_id=ZFA%3A0009000"><code>ZFA:0009000</code></a> <br>for <i>cell</i>
+              The List element MUST be either a CL term or the most accurate descendant of <br><a href="https://www.ebi.ac.uk/ols4/ontologies/zfa/classes?obo_id=ZFA%3A0009000"><code>ZFA:0009000</code></a> for <i>cell</i>
             </td>
           </tr>
           <tr>
@@ -424,7 +424,7 @@ With the exception of Cellosaurus, ontology terms for metadata MUST use [OBO-for
               <a href="https://www.ebi.ac.uk/ols4/ontologies/ncbitaxon/classes?obo_id=NCBITaxon%3A7227"><code>"NCBITaxon:7227"</code></a><br>for <i>Drosophila melanogaster</i>
             </td>
             <td>
-              The List element MUST be either a CL term or the most accurate descendant of <a href="https://www.ebi.ac.uk/ols4/ontologies/fbbt/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FFBbt_00007002?lang=en"><code>FBbt:00007002</code></a><br>for <i>cell</i>
+              The List element MUST be either a CL term or the most accurate descendant of <br><a href="https://www.ebi.ac.uk/ols4/ontologies/fbbt/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FFBbt_00007002?lang=en"><code>FBbt:00007002</code></a> for <i>cell</i>
             </td>
           </tr>
           <tr>
