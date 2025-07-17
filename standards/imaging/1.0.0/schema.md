@@ -36,14 +36,20 @@ This document is organized into two sections: cross-modality mapping for Dynamic
 
 These are the ontologies used.
 
+With the exception of Cellosaurus, ontology terms for metadata MUST use [OBO-format identifiers](http://www.obofoundry.org/id-policy.html), meaning a CURIE (prefixed identifier) of the form **Ontology:Identifier**. For example, [EFO:0000001](https://www.ebi.ac.uk/ols4/ontologies/efo/classes?obo_id=EFO%3A0000001) is a term in the Experimental Factor Ontology (EFO). Cellosaurus requires a prefixed identifier of the form **Ontology_Identifier** such as [CVCL_1P02](https://www.cellosaurus.org/CVCL_1P02).<br><br>
+ If ontologies are missing required terms, then ontologists are responsive to New Term Requests [NTR] such as [[NTR] Version specific Visium assays](https://github.com/EBISPOT/efo/issues/2178) which was created for CELLxGENE Discover requirements.
+
+
 | Ontology | OBO Prefix |
 |:--|:--|
 | [C. elegans Development Ontology] | WBls |
 | [C. elegans Gross Anatomy Ontology] | WBbt |
 | [Cell Ontology] | CL |
+| [Cellosaurus] | CVCL_ |
 | [Drosophila Anatomy Ontology] | FBbt |
 | [Drosophila Development Ontology] | FBdv |
 | [Experimental Factor Ontology] | EFO |
+| [Gene Ontology]                         | GO         |
 | [Human Developmental Stages] |  HsapDv |
 | [Mondo Disease Ontology] | MONDO |
 | [Mouse Developmental Stages]| MmusDv |
@@ -52,7 +58,6 @@ These are the ontologies used.
 | [Uberon multi-species anatomy ontology] |  UBERON |
 | [Zebrafish Anatomy Ontology] | ZFA<br>ZFS |
 | [Cell Line Ontology] | CLO |
-| [Gene Ontology]                         | GO         |
 | | |
 
 [C. elegans Development Ontology]: https://obofoundry.org/ontology/wbls.html
@@ -61,11 +66,15 @@ These are the ontologies used.
 
 [Cell Ontology]: http://obofoundry.org/ontology/cl.html
 
+[Cellosaurus]: https://www.cellosaurus.org/
+
 [Drosophila Anatomy Ontology]: https://obofoundry.org/ontology/fbbt.html
 
 [Drosophila Development Ontology]: https://obofoundry.org/ontology/fbdv.html
 
 [Experimental Factor Ontology]: https://www.ebi.ac.uk/ols4/ontologies/efo
+
+[Gene Ontology]: https://geneontology.org/
 
 [Human Ancestry Ontology]: http://www.obofoundry.org/ontology/hancestro.html
 
@@ -85,7 +94,6 @@ These are the ontologies used.
 
 [Cell Line Ontology]: https://www.ebi.ac.uk/ols4/ontologies/clo
 
-[Gene Ontology]: https://www.ebi.ac.uk/ols4/ontologies/go
 
 ## Cross-modality mapping for Dynamic Cell Atlas
 
@@ -164,8 +172,6 @@ The Dynamic Cell Atlas is comprised of multiple fluorescence microscopy datasets
 
 
 ## Cross-modality mapping for cryoET data portal
-
-**Contents**
 
 ### On-Disk Dataset Metadata
 
