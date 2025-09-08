@@ -36,15 +36,19 @@ The following descriptive metadata MUST be associated with all imaging datasets 
 - **Instrument** — imaging device metadata.  
 - **Acquisition** — acquisition software and hardware configuration.  
 - **Channel description** — per-channel settings.  
+For data in Zarr format, the metadata defined by [OME-Zarr](https://ngff.openmicroscopy.org/0.1/) SHOULD be implemented.<br>
+<br>
 
 **For general images:**
-All metadata are stored at the OME-Zarr group level.
+- All metadata are stored at the OME-Zarr group level.
+
 **For high content screening (HCS):**
 - Plate-level metadata: data description, instrument, acquisition.  
 - Well-level metadata: subject, procedure, channel description.
 
-For data in Zarr format, the metadata defined by [OME-Zarr](https://ngff.openmicroscopy.org/0.1/) SHOULD be implemented.<br>
-For the full set of metadata for CryoET data, see [here](TBD). <br>
+**For CryoET data:**
+- The full set of metadata for CryoET data is described [here](TBD). <br>
+
 The mapping of CryoET data and DCA data to the XMS is specified [here](TBD).
 
 ## Data description
@@ -125,7 +129,7 @@ Security & Compliance Metadata and Technical Metadata outlined in the [Data regi
 Description: Species, genotype, age, sex, and source.
 
 Cross-modality metadata: 
-[Cross-modality schema metadata](https://github.com/chanzuckerberg/data-guidance/tree/main/standards/cross-modality) should be captured here.
+[Cross-modality schema metadata](https://github.com/chanzuckerberg/data-guidance/tree/main/standards/cross-modality) are captured here.
 
 
 ### non_biological_subject
@@ -261,7 +265,7 @@ Metadata describing the equipment used to acquire data, including part names, se
     </tr>
     <tr>
       <th>Annotator</th>
-      <td>For CZI internally generated data: Submitter MUST annotate.
+      <td>For CZI internally generated data: Submitter MUST annotate.<br>
        For external data: Submitter SHOULD annotate when the information is available.
       </td>
     </tr>
@@ -286,7 +290,7 @@ Metadata describing the equipment used to acquire data, including part names, se
     </tr>
     <tr>
       <th>Annotator</th>
-      <td>For CZI internally generated data: Submitter MUST annotate.
+      <td>For CZI internally generated data: Submitter MUST annotate.<br>
        For external data: Submitter SHOULD annotate when the information is available.
       </td>
     </tr>
@@ -348,11 +352,11 @@ Metadata describing the channel information. <br>
 </tbody></table>
 <br>
 
-### source
+### channel_source
 <table><tbody>
     <tr>
       <th>Key</th>
-      <td>source</td>
+      <td>channel_source</td>
     </tr>
     <tr>
       <th>Description</th>
