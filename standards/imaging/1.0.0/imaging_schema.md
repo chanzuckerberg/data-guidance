@@ -37,9 +37,11 @@ The following descriptive metadata MUST be associated with all imaging datasets 
 - **Acquisition** — acquisition software and hardware configuration.  
 - **Channel description** — per-channel settings.  
 
+**For general images:**
+All metadata are stored at the OME-Zarr group level.
 **For high content screening (HCS):**
-- Plate-level: data description, instrument, acquisition.  
-- Well-level: subject, procedure, channel description.
+- Plate-level metadata: data description, instrument, acquisition.  
+- Well-level metadata: subject, procedure, channel description.
 
 For data in Zarr format, the metadata defined by [OME-Zarr](https://ngff.openmicroscopy.org/0.1/) SHOULD be implemented.<br>
 For the full set of metadata for CryoET data, see [here](TBD). <br>
@@ -105,7 +107,7 @@ Security & Compliance Metadata and Technical Metadata outlined in the [Data regi
     </tr>
     <tr>
       <th>Description</th>
-      <td>Time that data files were created, used to uniquely identify the data</td>
+      <td>The start time of data acquisition, used to uniquely identify the data.</td>
     </tr>
     <tr>
       <th>Annotator</th>
@@ -151,6 +153,52 @@ Cross-modality metadata:
 
 ## Procedure
 Metadata about any procedures performed prior to data acquisition, including subject procedures (surgeries, behavior training, etc.) and specimen procedures (tissue preparation, staining, etc.).
+
+### subject_procedure
+<table><tbody>
+    <tr>
+      <th>Key</th>
+      <td>subject_procedure</td>
+    </tr>
+    <tr>
+      <th>Description</th>
+      <td>Procedures performed on a live subject. May have multiple procedures per data.</td>
+    </tr>
+    <tr>
+      <th>Annotator</th>
+      <td>OPTIONAL.</td>
+    </tr>
+    <tr>
+      <th>Value</th>
+        <td><code>List[String]</code>. 
+         Examples: infection, chemical treatment.
+        </td>
+    </tr>
+</tbody></table>
+<br>
+
+### specimen_procedure
+<table><tbody>
+    <tr>
+      <th>Key</th>
+      <td>specimen_procedure</td>
+    </tr>
+    <tr>
+      <th>Description</th>
+      <td>Procedures performed on a fixed sample. May have multiple procedures per data.</td>
+    </tr>
+    <tr>
+      <th>Annotator</th>
+      <td>OPTIONAL.</td>
+    </tr>
+    <tr>
+      <th>Value</th>
+        <td><code>List[String]</code>. 
+         Examples: tissue clearing, in situ hybridization.
+        </td>
+    </tr>
+</tbody></table>
+<br>
 
 ### label
 <table><tbody>
@@ -213,7 +261,9 @@ Metadata describing the equipment used to acquire data, including part names, se
     </tr>
     <tr>
       <th>Annotator</th>
-      <td>Submitter MUST annotate.</td>
+      <td>For CZI internally generated data: Submitter MUST annotate.
+       For external data: Submitter SHOULD annotate when the information is available.
+      </td>
     </tr>
     <tr>
       <th>Value</th>
@@ -236,7 +286,9 @@ Metadata describing the equipment used to acquire data, including part names, se
     </tr>
     <tr>
       <th>Annotator</th>
-      <td>Submitter MUST annotate.</td>
+      <td>For CZI internally generated data: Submitter MUST annotate.
+       For external data: Submitter SHOULD annotate when the information is available.
+      </td>
     </tr>
     <tr>
       <th>Value</th>
@@ -273,4 +325,71 @@ Metadata describing the devices and hardware components active during image acqu
 
 ## Channel description
 Metadata describing the channel information. <br>
+
+### channel_name
+<table><tbody>
+    <tr>
+      <th>Key</th>
+      <td>channel_name</td>
+    </tr>
+    <tr>
+      <th>Description</th>
+      <td>Name of the imaging channel.</td>
+    </tr>
+    <tr>
+      <th>Annotator</th>
+      <td>Submitter MUST annotate.</td>
+    </tr>
+    <tr>
+      <th>Value</th>
+        <td><code>String</code>. 
+        </td>
+    </tr>
+</tbody></table>
+<br>
+
+### source
+<table><tbody>
+    <tr>
+      <th>Key</th>
+      <td>source</td>
+    </tr>
+    <tr>
+      <th>Description</th>
+      <td>Source or method used to generate this channel.</td>
+    </tr>
+    <tr>
+      <th>Annotator</th>
+      <td>Submitter MUST annotate.</td>
+    </tr>
+    <tr>
+      <th>Value</th>
+        <td><code>String. Channel sources that are direct outputs of the instrument MUST be annotated with the value "raw".</code>. 
+        </td>
+    </tr>
+</tbody></table>
+<br>
+
+### intended_measurement
+<table><tbody>
+    <tr>
+      <th>Key</th>
+      <td>intended_measurement</td>
+    </tr>
+    <tr>
+      <th>Description</th>
+      <td>What this channel is intended to measure.</td>
+    </tr>
+    <tr>
+      <th>Annotator</th>
+      <td>Submitter MUST annotate.</td>
+    </tr>
+    <tr>
+      <th>Value</th>
+        <td><code>String.</code>. 
+        </td>
+    </tr>
+</tbody></table>
+<br>
+
 OPTIONAL: Follow [OMERO metadata specification](https://ngff.openmicroscopy.org/latest/#omero-md).
