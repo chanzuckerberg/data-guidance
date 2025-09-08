@@ -36,6 +36,8 @@ The following descriptive metadata MUST be associated with all imaging datasets 
 - **Instrument** — imaging device metadata.  
 - **Acquisition** — acquisition software and hardware configuration.  
 - **Channel description** — per-channel settings.  
+<br>
+
 For data in Zarr format, the metadata defined by [OME-Zarr](https://ngff.openmicroscopy.org/0.1/) SHOULD be implemented.<br>
 <br>
 
@@ -97,7 +99,7 @@ Security & Compliance Metadata and Technical Metadata outlined in the [Data regi
     <tr>
       <th>Value</th>
         <td><code>List[String]</code>. 
-         The List element MUST be the following: Zarr_V2, Zarr_V3, TBD.
+         Examples: Zarr_V2, Zarr_V3, mrc.
         </td>
     </tr>
 </tbody></table>
@@ -149,7 +151,6 @@ Cross-modality metadata:
     <tr>
       <th>Value</th>
         <td><code>List[String]</code>. 
-         TBD
         </td>
     </tr>
 </tbody></table>
@@ -346,7 +347,7 @@ Metadata describing the channel information. <br>
     </tr>
     <tr>
       <th>Value</th>
-        <td><code>String</code>. 
+        <td><code>List[String]</code>. 
         </td>
     </tr>
 </tbody></table>
@@ -368,7 +369,7 @@ Metadata describing the channel information. <br>
     </tr>
     <tr>
       <th>Value</th>
-        <td><code>String. Channel sources that are direct outputs of the instrument MUST be annotated with the value "raw".</code>. 
+        <td><code>List[String]</code>. Channel sources that are direct outputs of the instrument MUST be annotated with the value "raw". 
         </td>
     </tr>
 </tbody></table>
@@ -390,7 +391,7 @@ Metadata describing the channel information. <br>
     </tr>
     <tr>
       <th>Value</th>
-        <td><code>String.</code>. 
+        <td><code>List[String]</code>. 
         </td>
     </tr>
 </tbody></table>
