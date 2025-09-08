@@ -57,7 +57,7 @@ The mapping of CryoET data and DCA data to the XMS is specified [here](TBD).
 Description: Administrative metadata about the source of the data, funding, relevant licenses, and restrictions on use.
 
 Cross-modality metadata: 
-Security & Compliance Metadata and Technical Metadata outlined in the [Data registration needs](https://czi.atlassian.net/wiki/spaces/SCI/pages/3896868957/Data+Registration+Needs+Metadata) should be captured here.
+Security & Compliance Metadata and Technical Metadata outlined in the [Data registration needs](https://czi.atlassian.net/wiki/spaces/SCI/pages/3896868957/Data+Registration+Needs+Metadata) are captured here.
 
 ### imaging_method
 <table><tbody>
