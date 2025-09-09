@@ -291,8 +291,7 @@ Metadata describing the equipment used to acquire data, including part names, se
     </tr>
     <tr>
       <th>Annotator</th>
-      <td>For CZI internally generated data: Submitter MUST annotate.<br>
-       For external data: Submitter SHOULD annotate when the information is available.
+      <td>Submitter SHOULD annotate when the information is available.
       </td>
     </tr>
     <tr>
