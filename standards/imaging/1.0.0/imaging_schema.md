@@ -27,7 +27,7 @@ All changes are documented in the schema [Changelog](#appendix-a-changelog).
 
 
 ## Overview
-The following descriptive metadata MUST be associated with all imaging datasets to ensure that datasets can be found by searching for common characteristics of datasets. These metadata MUST be programmatically validated to ensure compliance. Additional metadata MAY be annotated at the discretion of data stewards.
+The following descriptive metadata are associated with all imaging datasets to ensure that datasets can be found by searching for common characteristics of datasets. These metadata MUST be programmatically validated to ensure compliance. Additional metadata MAY be annotated at the discretion of data stewards.
 
 **Categories of metadata:**
 - **Data description** — dataset-level metadata (source, license, compliance).  
