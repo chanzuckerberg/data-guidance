@@ -42,7 +42,7 @@ For data in Zarr format, the metadata defined by [OME-Zarr](https://ngff.openmic
 <br>
 
 **For general images:**
-- All metadata are stored at the OME-Zarr group level.
+- All metadata are stored at the OME-Zarr root level.
 
 **For high content screening (HCS):**
 - Plate-level metadata: data description, instrument, acquisition.  
@@ -167,7 +167,7 @@ Metadata about any procedures performed prior to data acquisition, including sub
     </tr>
     <tr>
       <th>Description</th>
-      <td>Procedures performed on a live subject. May have multiple procedures per data.</td>
+      <td>Procedures performed on a live subject prior to imaging prep. May have multiple procedures per data.</td>
     </tr>
     <tr>
       <th>Annotator</th>
@@ -190,7 +190,7 @@ Metadata about any procedures performed prior to data acquisition, including sub
     </tr>
     <tr>
       <th>Description</th>
-      <td>Procedures performed on a fixed sample. May have multiple procedures per data.</td>
+      <td>Procedures performed after sample preservation has begun and throughout sample preparation for imaging. May have multiple procedures per data.</td>
     </tr>
     <tr>
       <th>Annotator</th>
@@ -199,7 +199,7 @@ Metadata about any procedures performed prior to data acquisition, including sub
     <tr>
       <th>Value</th>
         <td><code>List[String]</code>. 
-         Examples: tissue clearing, in situ hybridization.
+         Examples: plunge-freezing, tissue clearing, in situ hybridization, immunostaining.
         </td>
     </tr>
 </tbody></table>
@@ -305,15 +305,15 @@ Metadata describing the equipment used to acquire data, including part names, se
 ## Acquisition
 Metadata describing the devices and hardware components active during image acquisition, along with their specific configurations and settings. This information supports experimental reproducibility, enables accurate interpretation of imaging data, and documents the source and characteristics of each channel.
 
-### acquisition_software
+### acquisition_description
 <table><tbody>
     <tr>
       <th>Key</th>
-      <td>acquisition_software</td>
+      <td>acquisition_description</td>
     </tr>
     <tr>
       <th>Description</th>
-      <td>List exact versions. For custom code that has been deposited into a community repository, provide accession details.</td>
+      <td>A free-text description of the acquisition, or a reference to a file containing acquisition parameters.</td>
     </tr>
     <tr>
       <th>Annotator</th>
@@ -328,7 +328,7 @@ Metadata describing the devices and hardware components active during image acqu
 <br>
 
 ## Channel description
-Metadata describing the channel information. <br>
+Metadata describing the channel information. Only applicable if the data contiain channels.<br>
 
 ### channel_name
 <table><tbody>
