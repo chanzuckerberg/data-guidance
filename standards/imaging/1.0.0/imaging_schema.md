@@ -54,7 +54,7 @@ For data in Zarr format, the metadata defined by [OME-Zarr](https://ngff.openmic
 The mapping of CryoET data and DCA data to the XMS is specified [here](TBD).
 
 ## Data description
-Description: Administrative metadata about the source of the data, funding, relevant licenses, and restrictions on use.
+Administrative metadata about the source of the data, funding, relevant licenses, and restrictions on use.
 
 Cross-modality metadata: 
 Security & Compliance Metadata and Technical Metadata outlined in the [Data registration needs](https://czi.atlassian.net/wiki/spaces/SCI/pages/3896868957/Data+Registration+Needs+Metadata) are captured here.
@@ -128,7 +128,7 @@ Security & Compliance Metadata and Technical Metadata outlined in the [Data regi
 <br>
 
 ## Subject
-Description: Species, genotype, age, sex, and source.
+Metadata describing the subject being imaged: Species, genotype, age, sex, and source.
 
 Cross-modality metadata: 
 [Cross-modality schema metadata](https://github.com/chanzuckerberg/data-guidance/tree/main/standards/cross-modality) are captured here.
